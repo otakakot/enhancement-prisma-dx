@@ -8,5 +8,3 @@ RUN apt-get update && apt-get install -y inotify-tools curl unzip
 
 RUN curl -fsSL https://bun.sh/install | bash && \
     bun install prisma
-
-WORKDIR /schema

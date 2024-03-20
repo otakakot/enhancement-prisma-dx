@@ -22,6 +22,7 @@ services:
       - 5555:5555
     environment:
       DATABASE_URL: postgres://postgres:postgres@postgres:5432/postgres?sslmode=disable
+    working_dir: /schema
     volumes:
       - ../schema:/schema
     restart: always
